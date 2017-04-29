@@ -1,0 +1,11 @@
+#home{
+	height: 100vh;
+	background-image: url(../image/bg.jpg);
+	background-size: cover;
+}
+@media only screen and (max-device-width: 480px) {
+#home{
+	background-position: center;
+	
+}
+}
