@@ -13,12 +13,26 @@ nav{
 }
 section{
 	height: 100vh;
+	max-width: 100%;
 }
 .home{
 	background-image: url(..//image/bg.jpg);
 	background-size: cover;
 	
 }
+.main_text div{
+	position: relative;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 800px) {
   nav ul{
   	margin-left:0%;
@@ -28,3 +42,4 @@ section{
   	padding: 5px 5px  !important;
   }
 }
+
