@@ -23,8 +23,8 @@ section{
   nav ul{
   	margin-left:0%;
   }
-  nav ul li{
-  	font-size: 11px;
-  	padding: 0px;
+  nav ul li a {
+
+  	padding: 5px 5px  !important;
   }
 }
