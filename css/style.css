@@ -14,8 +14,10 @@ section{
 	width: 50%;
 	height: auto;
 	position: absolute;
-	left:30%;
+	left:25%;
 	top:25%;
+	text-align: center;
+	
 }
 .home_mt div{
 	float: left;
