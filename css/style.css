@@ -15,7 +15,7 @@ section{
 	height: auto;
 	position: absolute;
 	left:30%;
-	top:30%;
+	top:25%;
 }
 .home_mt div{
 	float: left;
@@ -34,7 +34,7 @@ section{
 	position: absolute;
 	width: 20%;
 	height: auto;
-	top:80%;
+	top:70%;
 	left: 40%;
 	text-align: center;
 	font-size: 2em;
@@ -86,7 +86,7 @@ section{
 
 
 #left{
-margin-top:30%;
+margin-top:40%;
 }
 
 
