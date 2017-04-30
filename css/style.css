@@ -1,11 +1,21 @@
-#home{
-	height: 100vh;
-	background-image: url(../image/bg.jpg);
-	background-size: cover;
+
+
+nav ul {
+	margin-left:50%;
+
 }
-@media only screen and (max-device-width: 480px) {
-#home{
-	background-position: center;
+nav ul li a{
+	color:#ffffff
+}
+nav{
+	background-image: url();
 	
 }
+section{
+	height: 100vh;
+}
+.home{
+	background-image: url(..//image/bg.jpg);
+	background-size: cover;
+	
 }
