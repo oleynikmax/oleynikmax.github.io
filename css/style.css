@@ -1,109 +1,104 @@
-
-nav ul {
-	margin-left:50%;
-
-}
-nav ul li a{
-	color:#ffffff
-
-}
 section{
+	position: relative;
 	height: 100vh;
 	max-width: 100%;
-    position: relative;
+	max-height:100% ;
 
 }
 .home{
-	background-image: url(..//image/bg.jpg);
-	background-size: cover;
-
+	height: 100vh;
+		background-image: url(..//image/bg.jpg);
+	background-size:cover;	
 }
-.main_text{
-    position: absolute;
-    display: inline-block;
-    font-weight: bold;
-    height: auto;
- 	width: auto;
-    left: 30%;
-    top: 40%;
-   
-
+.home_mt{
+	width: 50%;
+	height: auto;
+	position: absolute;
+	left:30%;
+	top:30%;
 }
-.main_text div{
-	color:#74c7d5;
-	position: relative;	
+.home_mt div{
 	float: left;
-	font-size: 3em;
-	line-height: 0.7em;
+	color:#74c7d5;
+	line-height: 0.8em;
 	text-align: center;
 	
 }
-.main_text .mt2{
+.home_mt1{
+	font-size: 3em;
+}
+.home_mt2{
 	font-size: 6em;
 }
+.start{
+	position: absolute;
+	width: 20%;
+	height: auto;
+	top:80%;
+	left: 40%;
+	text-align: center;
+	font-size: 2em;
+	color: #74c7d5;
+	line-height: 1em;
+	
+}
 
-.services{
+
+
+
+
+
+.wrap-serv{
+	position: absolute;
+
+	
+}
+.wrap-serv .row div{
+
+	text-align: center;
+	/*background-color: #c45158;*/
+	color:#ffffff;
+
+
+}
+.wrap-serv .row .servt1{
+	text-transform: uppercase;
+}
+.wrap-serv .row .servt1,.servt2{
+	max-width: 50%;
+	margin-left: 25%;
+	height: auto;
+}	
+
+.wrap-serv .row .servicesimg{
+	margin-top: 15%;
+
+}
+.wrap-serv{
+
 	background-image: url(..//image/bg2.jpg);
 	background-size: cover;
 }
-.services #cols{
-	position: absolute;
-    font-weight: bold;
-    height: auto;
- 	width: auto;
-    left: 13%;
-    top: 50%;
-    box-sizing: content-box;
-}
-.services #cols div{
-	background-color: #c45158;
-	margin: 15px;
-	text-align: center;
-	box-sizing: content-box;
-	}
-.services .servt1{
-	text-transform: uppercase;
-}
-.services #cols div .servicesimg:hover{
+.wrap-serv .row .servicesimg:hover{
 	opacity: 0.5;
-	cursor:pointer; 
-}
-.services .servt1{
-	font-size: 1.5em;	
-}
-.mt_services,.mt2_services,.mt3_services{
-position: absolute;
-    display: block;
-    font-weight: bold;
-    height: auto;
- 	width: 50%;
-    text-align: center;
-    box-sizing: content-box;
-    left:25%;
-    	
-}
-.mt_services{
-	top:10%;
-	font-size: 2.5em;
-}
-.mt2_services{
-	top:15%;
-
-}
-.mt3_services{
-	top:20%;
+	cursor: pointer;
 }
 
 
+#left{
+margin-top:30%;
+}
 
 
 
 @media screen and (max-width: 800px) {
-  nav ul{
-  	margin-left:0%;
-  }
-  nav ul li a {
+  section{
+  	height: 100%;
 
-  	padding: 5px 5px  !important;
   }
+.wrap-serv{
+	
+	background-image: url(..//image/bg2.jpg);
+	background-size: cover;
+}
 }
