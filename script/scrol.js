@@ -1,15 +1,15 @@
 $(document).ready(function(){
-    $(window).scroll(function(){
-        var move = $(window).scrollTop();
-        $("#left").css({
-        	"transform":"translate(0%," + -move/40 + "%"
-        })
-        $(".home_mt").css({
-            "transform":"translate(0%," + move/3     + "%"
-        })
-         $(".start").css({
-            "transform":"translate(0%," + move/2 + "%"
-        })
-
-    });
+    $("figure").mouseenter(goAnim).mouseleave(noAnim);
+    $(".scroll-down").onclick(scroll);
+    function scroll(){
+        $(window).scrollTo(400);
+    }
+   function goAnim(){
+    $(this).find('p').addClass("animated fadeInUp");
+    $(this).find('img').css("opacity","0.4")
+   }
+   function noAnim(){
+    $(this).find('p').removeClass("animated fadeInUp")
+     $(this).find('img').css("opacity","1")
+   }
 });
