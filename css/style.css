@@ -145,8 +145,8 @@ text-transform: uppercase;
 }
 .anim{
 	display: inline-block;
-    animation-delay: 0.7s;
-    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-duration: 0.7s;
     animation-play-state: running;
     animation-timing-function: linear;
 }
