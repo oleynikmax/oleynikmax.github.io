@@ -80,9 +80,6 @@ text-transform: uppercase;
     padding: 40px 20px;
     text-align: center;
 }
-.iconbox:hover{
-
-}
 .iconbox-icon{
 	  color: #222;
     font-size: 32px;
@@ -146,4 +143,10 @@ text-transform: uppercase;
 .contain-work figure h2{
     margin-top:18%;
 }
-
+.anim{
+	display: inline-block;
+    animation-delay: 0.7s;
+    animation-duration: 1.5s;
+    animation-play-state: running;
+    animation-timing-function: linear;
+}

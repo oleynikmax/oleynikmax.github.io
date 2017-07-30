@@ -43,37 +43,37 @@
 		</div>
 		<div class="row">
 					<div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0">
-						<div class="iconbox">
+						<div class="iconbox anim ">
 							<div class="iconbox-icon">
 								<span class="fa fa-cogs"></span>
 							</div>
-							<h3>Web Programming</h3>
+							<h4>Web Programming</h3>
 							<div class="iconbox-text">  Good things come to those who wait, but only the things left by those who hustle </div>
 						</div>
 					</div>
 					<div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0">
-						<div class="iconbox">
+						<div class="iconbox anim">
 							<div class="iconbox-icon">
 								<span class="fa fa-magic"></span>
 							</div>
-							<h3>Web Design</h3>
+							<h4>Web Design</h3>
 							<div class="iconbox-text"> Good things come to those who wait, but only the things left by those who hustle </div>
 						</div>
 					</div>
 					<div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0">
-						<div class="iconbox">
+						<div class="iconbox anim">
 							<div class="iconbox-icon"><span class="fa fa-question-circle"></span>
 							</div>
-							<h3>Consultation</h3>
+							<h4>Consultation</h3>
 							<div class="iconbox-text"> Good things come to those who wait, but only the things left by those who hustle </div>
 						</div>
 					</div>
 					<div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0">
-						<div class="iconbox">
+						<div class="iconbox anim">
 							<div class="iconbox-icon">
 								<span class="fa fa-user-plus"></span>
 							</div>
-							<h3>Community</h3>
+							<h4>Community</h3>
 							<div class="iconbox-text"> Good things come to those who wait, but only the things left by those who hustle </div>
 						</div>
 					</div>
@@ -93,7 +93,7 @@
 		</div>
 		<div class="row">
 				<div class="col-xs-12 col-sm-4 col-md-4">
-					<div class="contain-work">
+					<div class="contain-work anim">
 						<figure class="anim-figure">
 							<img src="image/home_bg_1.jpg" alt="img01">
 							<figcaption>
@@ -104,7 +104,7 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4">
-					<div class="contain-work">
+					<div class="contain-work anim">
 						<figure class="anim-figure">
 							<img src="image/test-1.jpg" alt="img01">
 							<figcaption>
@@ -115,7 +115,7 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4">
-					<div class="contain-work">
+					<div class="contain-work anim">
 						<figure class="anim-figure">
 							<img src="image/test-1.jpg" alt="img01">
 							<figcaption>
@@ -126,7 +126,7 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4">
-					<div class="contain-work">
+					<div class="contain-work anim">
 						<figure class="anim-figure">
 							<img src="image/test-1.jpg" alt="img01">
 							<figcaption>
@@ -137,7 +137,7 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4">
-					<div class="contain-work">
+					<div class="contain-work anim">
 						<figure class="anim-figure">
 							<img src="image/test-1.jpg" alt="img01">
 							<figcaption>
@@ -148,7 +148,7 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4">
-					<div class="contain-work">
+					<div class="contain-work anim">
 						<figure class="anim-figure">
 							<img src="image/test-1.jpg" alt="img01">
 							<figcaption>
@@ -174,24 +174,26 @@
       var topVisible = coords.top > 0 && coords.top < windowHeight;
       var bottomVisible = coords.bottom < windowHeight && coords.bottom > 0;
 
-      return bottomVisible;
+      return topVisible;
     }
 
-			 function showVisible() {
-      var imgs = document.getElementsByClassName('animheader');
-      for (var i = 0; i < imgs.length; i++) {
-
-        var le = imgs[i];
-
- 
-
-        if (isVisible(le)) {
-        	le.classList.add("animated");
-  			le.classList.add("fadeInLeft");        
-        }
-      }
-
-    }
+	function showVisible() {
+    var elems = document.getElementsByClassName('animheader');
+    var box_elem = document.getElementsByClassName('anim');
+      for (var i = 0; i < elems.length; i++) {
+        var el = elems[i];
+        if (isVisible(el)) {
+        	el.classList.add("animated");
+		el.classList.add("fadeInLeft");
+	}}
+		for(var j=0;j<box_elem.length;j++){
+			var bel = box_elem[j];
+			if (isVisible(bel)){ 
+				bel.classList.add("animated")
+				bel.classList.add("zoomIn")
+			}
+		}
+}
 
     window.onscroll = showVisible;
     showVisible();
