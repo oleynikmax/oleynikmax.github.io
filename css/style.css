@@ -59,7 +59,7 @@
 .animheader{
 	opacity: 0;
 	text-align: center;
-	margin:120px 0 120px;
+	margin:90px 0 90px;
 
 	
 }
@@ -145,8 +145,69 @@ text-transform: uppercase;
 }
 .anim{
 	display: inline-block;
-    animation-delay: 0.5s;
-    animation-duration: 0.7s;
+    animation-delay: 0.7s;
+    animation-duration: 1.5s;
     animation-play-state: running;
     animation-timing-function: linear;
+}
+.aboutmargin{
+    text-align: center;
+    margin: 120px 0 120px 0;
+}
+.testing{
+    position: relative;
+    margin: 30px 30px 150px 30px;
+    text-align: left;
+    /*visibility: hidden;*/
+    display: none;
+    font-size: 1.2em;
+
+
+}
+#about_me{
+   /*visibility: visible;*/
+   display: block;
+}
+.activ-about{
+    opacity: 0.6;
+}
+
+.back-about{
+    background: #fff;
+    border-radius: 25px;
+}
+.anim-about:hover{
+    cursor: pointer;
+}
+.contc{
+text-align: left;
+padding-top: 15px;
+}
+.skill-list{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-left: -30px;
+
+}
+.skill-list li{
+    list-style-type: none;
+    text-transform: uppercase;
+     border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 750px) {
+  #about{
+    margin-bottom: 150px;
+  }
+
+}
+#about{
+    background-image: url(..//image/Backgrounds_Calm_blue_background_035582_.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    
 }

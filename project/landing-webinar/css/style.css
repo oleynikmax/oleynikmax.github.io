@@ -1,0 +1,105 @@
+.main-h , h1{
+    text-align: center;
+    font-family: ;
+    font-stretch: expanded;
+    
+}
+.main-h h1, .top-title p{
+    font-weight: 900;
+}
+.main-h h1 span{
+    padding-left: 5px;
+}
+.title-orange{
+    color: #ff621f;
+}
+.title-grey{
+    color: #737f89;
+    font-size: 1.2em;
+}
+.top-title p{
+font-size: 20px;
+text-align: center;
+
+}
+.mrg{
+    margin:40px 0;
+}
+.bron-button{
+    color: #fff;
+    background: #ff621f;
+    padding:15px 0;
+    border-bottom: 3px solid red;
+    border-radius: 25px;
+    margin: 15px 0;
+}
+.data-kalendar, .data-kalendar-sm{
+    text-align: center;
+    font-stretch:extra-condensed;
+    
+}
+.main-h ul{
+    list-style-image: url(..//image/title.png);
+    text-align: center;
+    
+}
+.data-kalendar{
+    font-size: 86px;
+    color: #c2c2c2;
+    background: #fff;
+}
+.data-kalendar-sm{
+    font-size: 26px;
+    background: #000;
+    color: #fff;
+    margin:0;
+}
+.data-right{
+    color: #fff;
+    font-size: 44px;
+    border-bottom:1px dashed #fff ;
+}
+.data-right-sm{
+    color: #fff;
+    font-size: 30px
+}
+.left-col{
+    background:#ff621f;
+}
+.avatar{
+    border: 8px solid #fff;
+    margin-top: 50px;   
+}
+figure figcaption{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    margin:35px 0 45px;
+}
+.list-char{
+    color: #fff;
+    font-size: 18px;
+}
+.list-char li{
+    margin:25px 0;
+}
+.title-right{
+    font-size: 20px;
+    font-stretch: extra-expanded;
+    margin:150px 0 70px;
+
+}
+.right-col{
+    background: #eaeaea;
+}
+.webinare-list{
+    list-style-image: url(..//image/marker-listl.png);
+    font-size: 24px;
+}
+.webinare-list li{
+margin:40px 0;
+}
+.t-centr{
+    text-align: center;
+    
+}
