@@ -166,6 +166,9 @@ text-transform: uppercase;
 
 
 }
+.activ-but{
+    background:#fff;
+}
 #about_me{
    /*visibility: visible;*/
    display: block;
@@ -181,6 +184,9 @@ text-transform: uppercase;
 }
 .anim-about:hover{
     cursor: pointer;
+}
+.aboutmargin h1{
+    color: #fff;
 }
 .contc{
 text-align: left;
