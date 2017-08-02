@@ -168,6 +168,8 @@ text-transform: uppercase;
 }
 .activ-but{
     background:#fff;
+    margin-bottom: 40px;
+    border-radius: 25px;
 }
 #about_me{
    /*visibility: visible;*/
@@ -175,7 +177,6 @@ text-transform: uppercase;
 }
 .activ-about{
     opacity: 0.6;
-    color: #fff;
 }
 
 .back-about{
