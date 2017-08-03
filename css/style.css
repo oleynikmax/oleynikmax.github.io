@@ -91,9 +91,9 @@ text-transform: uppercase;
 .contain-work{
 	clear: both;
     list-style: outside none none;
-    margin: 0 auto;
+    margin: 0;
     max-width: 100%;
-    padding: 1em 0 4em;
+    /*padding: 1em 0 4em;*/
     position: relative;
     text-align: center;
 }
@@ -154,6 +154,12 @@ text-transform: uppercase;
     text-align: center;
     margin: 120px 0 120px 0;
 }
+.contain-about p{
+    margin:0 0 0 0;
+}
+.anim-about{
+    margin-top: 30px;
+}
 .testing{
     background: #FFF;
     position: relative;
@@ -196,8 +202,9 @@ padding-top: 15px;
 .skill-list{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    /*  width: 300px;*/
     /*margin-left: -50px;*/
+    margin:50px 0;
 
 }
 .skill-list li{
@@ -208,10 +215,9 @@ padding-top: 15px;
     justify-content: space-between;
 }
 @media (max-width: 750px) {
-  #about{
-    margin-bottom: 150px;
+  .skill-list{
+    margin-left: -50px;
   }
-
 }
 #about{
     background-image: url(..//image/Backgrounds_Line_of_computer_code__gray_background_099063_.jpg);
